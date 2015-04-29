@@ -3,7 +3,7 @@ import os
 from cassandra.cluster import Cluster
 
 sys.path.append(os.getcwd())
-from cqlengine.management import sync_table 
+from cassandra.cqlengine.management import sync_table 
 from app.api.connection import connect 
 connect()
 

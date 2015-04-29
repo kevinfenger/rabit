@@ -1,4 +1,5 @@
-from cqlengine import * 
+from cassandra.cqlengine import columns
+from cassandra.cqlengine.models import Model 
 
 class Video(Model):
     __caching__ = '{"keys":"ALL", "rows_per_partition":"10"}' 

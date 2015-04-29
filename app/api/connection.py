@@ -1,5 +1,5 @@
-from cqlengine import management 
-from cqlengine.connection import setup 
+from cassandra.cqlengine import management 
+from cassandra.cqlengine.connection import setup 
 
 def connect(): 
     setup(["127.0.0.1"], "videos")
