@@ -4,8 +4,8 @@ from cassandra.cluster import Cluster
 
 sys.path.append(os.getcwd())
 from cassandra.cqlengine.management import sync_table 
-from app.api.connection import connect 
+from app import app
+from app.connection import connect 
 connect()
-
-from app.api.mod_video.models import Video 
+from app.mod_video.models import Video 
 sync_table(Video)
