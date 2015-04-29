@@ -5,6 +5,9 @@ from app.mod_video.models import Video
 mod_video = Blueprint('video',__name__,url_prefix='/api')
 
 def pick_image_url_based_on_weight(imgs):
+    if imgs is None: 
+        print 'test'
+        return 'unknown'
     weight_sum = 0
     for i in imgs: 
         weight_sum += i[1]
