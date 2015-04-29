@@ -1,6 +1,6 @@
 import json, random
 from flask import Blueprint, jsonify
-from app.api.mod_video.models import Video 
+from app.mod_video.models import Video 
 
 mod_video = Blueprint('video',__name__,url_prefix='/api')
 
